@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techie</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;1,100;1,400;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="images/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-bars" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href='index.html'>HOME</a></li>
+          <li><a href='blog.html'>BLOG</a></li>
+          <li><a href='about.html'>ABOUT</a></li>
+          <li><a href='contact.html'>CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+      <h1>Tech. Simplified.</h1>
+      <p>Bacon ipsum dolor amet swine frankfurter ribeye, bresaola kielbasa prosciutto brisket beef ribs. </p>
+      <a href="" class="hero-btn">Learn More!</a>
+    </div>
+  </section>
+<!--Toggle menu js-->
+  <script>
+    let navLinks = document.getElementById("navLinks");
+    function showMenu(){
+      navLinks.style.right = "0"
+    }
+    function hideMenu(){
+      navLinks.style.right = "-200px"
+    }
+  </script>
+<!---Blog-->
+<section class="blog">
+  <h1>Tech Shouldn't be Confusing.</h1>
+  <p>It's a simple lift and shift job. We should have a meeting to discuss <br>
+    the details of the next meeting this is not a video game, this is a meeting!, <br>
+     put your feelers out quantity, for can you champion this, nor minimize backwards overflow.</p>
+     <div class ="row">
+      <div class="col">
+        <h3>Blog 1</h3>
+        <p>or blue sky thinking copy and paste from stack overflow. Agile organic growth. That's mint</p>
+      </div>
+      <div class="col">
+        <h3>Blog 2</h3>
+        <p>or blue sky thinking copy and paste from stack overflow. Agile organic growth. That's mint</p>
+      </div>
+      <div class="col">
+        <h3>Blog 3</h3>
+        <p>or blue sky thinking copy and paste from stack overflow. Agile organic growth. That's mint</p>
+      </div>
+     </div>
+</section>
+</body>
+</html>
